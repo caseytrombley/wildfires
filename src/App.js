@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import MapView from "./components/MapView";
+import useWildfireData from "./components/WildfireFetcher";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const center = [37.7749, -122.4194]; // Centered on California
+  const wildfireData = useWildfireData();
+
+  return <MapView center={center} wildfireData={wildfireData} />;
 }
 
 export default App;
