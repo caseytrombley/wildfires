@@ -1,0 +1,10 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-122.4194, 37.7749] },
+      "properties": { "BRIGHTNESS": 320, "ACQ_DATE": "2025-07-15" }
+    }
+  ]
+}
